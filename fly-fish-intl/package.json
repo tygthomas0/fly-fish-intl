@@ -1,0 +1,21 @@
+{
+  "name": "fly-fish-intl",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem"
+  },
+  "dependencies": {
+    "@next/env": "^13.1.0",
+    "@storyblok/react": "^1.3.4",
+    "axios": "^0.27.2",
+    "mkcert": "^1.5.1",
+    "next": "^12.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
