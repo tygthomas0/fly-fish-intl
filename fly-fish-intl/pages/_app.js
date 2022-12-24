@@ -1,4 +1,4 @@
-import '../dist/output.css'
+import '../styles/globals.css'
 import { storyblokInit, apiPlugin } from "@storyblok/react"
 import Feature from '../components/Feature'
 import Grid from '../components/Grid'
