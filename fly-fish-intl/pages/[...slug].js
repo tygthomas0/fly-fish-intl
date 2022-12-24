@@ -1,7 +1,7 @@
 //creates dynamic routes based on what is in storyblok
 
 import Head from "next/head";
-import styles from "../styles/Home.module.css"
+import styles from "../dist/output.css"
 
 import { useStoryblokState, getStoryblokApi, StoryblokComponent } from "@storyblok/react";
 

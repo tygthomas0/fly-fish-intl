@@ -9,3 +9,14 @@ const Page = ({ blok }) => {
 }
 
 export default Page;
+/*
+
+
+const Page = ({ blok }) => {
+    return (
+        <main {...storyblokEditable(blok)}>
+            <StoryblokComponent blok={blok} key={blok._uid} />
+        </main>  
+    )
+}
+*/

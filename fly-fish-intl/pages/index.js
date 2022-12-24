@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../dist/output.css'
 import { getStoryblokApi, StoryblokComponent, useStoryblokState } from '@storyblok/react'
 
 export async function getStaticProps() {
@@ -33,17 +33,11 @@ export default function Home({ story }) {
         <link rel="icon" href="/favicon.ico" />
         
       </Head>
-
-      <header>
-        <h1>
-          { story ? story.name : 'Fly Fishing International' }
-        </h1>
-      </header>
       
+      {/*<StoryblokComponent blok={story.content}/>*/}
       {story.content.body.map(item => (
         <StoryblokComponent blok={item} key={item._uid}/>
       ))}
-      
     </div>
   )
 }
