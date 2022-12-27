@@ -5,13 +5,17 @@ import Grid from '../components/Grid'
 import Page from '../components/Page'
 import Teaser from '../components/Teaser'
 import Banner from '../components/Banner'
+import Gallery from '../components/Gallery'
+import Image from '../components/Image'
 
 const components = {
   feature: Feature,
   grid: Grid,
   teaser: Teaser,
   page: Page,
-  banner: Banner
+  banner: Banner,
+  gallery: Gallery,
+  image: Image
 }
 
 storyblokInit({
