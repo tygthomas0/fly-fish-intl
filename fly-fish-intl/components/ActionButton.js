@@ -1,11 +1,11 @@
 import { storyblokEditable } from "@storyblok/react"
 
-const Image = ({ blok }) => {
+const ActionButton = ({ blok }) => {
     return (
         <div {...storyblokEditable(blok)}>
-            <img src={blok.image.filename} width='100px'/> {/*temporary sizing*/}
+            <a href={blok.link}>{blok.title}</a>
         </div>
     )
 }
 
-export default Image;
+export default ActionButton;

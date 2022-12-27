@@ -7,6 +7,9 @@ import Teaser from '../components/Teaser'
 import Banner from '../components/Banner'
 import Gallery from '../components/Gallery'
 import Image from '../components/Image'
+import ActionButton from '../components/ActionButton'
+import ArticleCard from '../components/ArticleCard'
+import ProfileCard from '../components/ProfileCard'
 
 const components = {
   feature: Feature,
@@ -15,7 +18,10 @@ const components = {
   page: Page,
   banner: Banner,
   gallery: Gallery,
-  image: Image
+  image: Image,
+  actionbutton: ActionButton,
+  articlecard: ArticleCard,
+  profilecard: ProfileCard
 }
 
 storyblokInit({
