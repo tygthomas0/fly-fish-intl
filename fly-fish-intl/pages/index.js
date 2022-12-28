@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import { getStoryblokApi, StoryblokComponent, useStoryblokState } from '@storyblok/react'
 
 export async function getStaticProps() {
@@ -27,7 +25,7 @@ export default function Home({ story }) {
   console.log(story)
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Fly Fishing International</title>
         <link rel="icon" href="/favicon.ico" />

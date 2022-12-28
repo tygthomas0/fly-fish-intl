@@ -1,7 +1,7 @@
 import { storyblokEditable } from "@storyblok/react";
  
 const Feature = ({ blok }) => (
-  <div className="column feature" {...storyblokEditable(blok)}>
+  <div {...storyblokEditable(blok)} className="text-xs font-bold">
     {blok.name}
   </div>
 );
