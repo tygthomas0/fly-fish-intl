@@ -7,12 +7,14 @@ import Teaser from '../components/Teaser'
 import Banner from '../components/Banner'
 import Gallery from '../components/Gallery'
 import Image from '../components/Image'
+import ImageWithDesc from '../components/ImageWithDesc'
 import ActionButton from '../components/ActionButton'
 import ArticleCard from '../components/ArticleCard'
 import ProfileCard from '../components/ProfileCard'
 import ImageGallery from '../components/ImageGallery'
 import LgImgArticleCard from '../components/LgImgArticleCard'
 import ImageWithLink from '../components/ImageWithLink'
+import Footer from '../components/Footer'
 
 const components = {
   feature: Feature,
@@ -27,7 +29,9 @@ const components = {
   profilecard: ProfileCard,
   imagegallery: ImageGallery,
   lgimgarticlecard: LgImgArticleCard,
-  imagewithlink: ImageWithLink
+  imagewithlink: ImageWithLink,
+  footer: Footer,
+  imagewithdesc: ImageWithDesc
 }
 
 storyblokInit({

@@ -2,7 +2,7 @@ import { storyblokEditable } from "@storyblok/react"
 
 const ArticleCard = ({ blok }) => {
     return (
-        <div {...storyblokEditable(blok)} className={"rounded border-[1px] border-black hover:shadow-xl"}>
+        <div {...storyblokEditable(blok)} className={"rounded border-[1px] border-black hover:shadow-xl bg-white"}>
             <img src={blok.featured.filename} className="w-full h-[300px]"/>
             <div className="p-[15px]">
                 <h3 className="text-2xl font-bold">{blok.title}</h3>

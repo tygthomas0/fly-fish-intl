@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 .sib2 {
-    @apply w-full mx-auto mb-2 flex flex-row flex-nowrap justify-between 
-    
+    @apply w-full mx-auto mb-2 flex flex-row flex-nowrap justify-between
+    [&>div]:flex-col [&>div:nth-child(1)]:w-3/5 [&>div:nth-child(2)]:w-[30%] [&>div>div]:w-full [&>div>div]:mb-10
 }
 
 .sib3 {
@@ -17,8 +17,16 @@
     [&>div]:w-[24%];
 }
 
+.sib5 {
+    @apply w-full mx-auto mb-2 flex flex-col flex-wrap [&>div]:my-2 
+}
+
 .sib6 {
     @apply w-full mx-auto mb-2 flex flex-row flex-nowrap justify-between 
+}
+
+.sib7 {
+    @apply w-full mx-auto mb-2 flex flex-col flex-wrap [&>div]:my-2
 }
 
 .sib8 {
@@ -26,8 +34,3 @@
     [&>div>a]:font-bold [&>div>a]:text-xl [&>div>a]:tracking-wider [&>div>a]:w-[12.5%] [&>div>a]:text-center 
     [&>div]:w-[12.5%];
 }
-/*
-.vendor {
-    @apply 
-}
-*/
