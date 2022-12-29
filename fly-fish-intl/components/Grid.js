@@ -1,10 +1,9 @@
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
  
 const Grid = ({ blok }) => {
+  
   return (
-    <div className="w-4/5 mx-auto mb-2 flex flex-row flex-nowrap justify-between 
-      [&>div>a]:font-bold [&>div>a]:text-xs [&>div>a]:-mt-2
-      " 
+    <div className={"sib" + blok.columns.length.toString() + " [&>div>a>img]:w-[200px] [&>div>a>img]:h-[200px]"}
       {...storyblokEditable(blok)}
     >
       {blok.columns.map((nestedBlok) => (
@@ -15,3 +14,8 @@ const Grid = ({ blok }) => {
 };
  
 export default Grid;
+
+/*
+w-full mx-auto mb-2 flex flex-row flex-nowrap justify-between 
+      [&>div>a]:font-bold [&>div>a]:text-xl [&>div>a]:tracking-wider [&>div>a]:w-[12.5%] [&>div>a]:text-center
+*/

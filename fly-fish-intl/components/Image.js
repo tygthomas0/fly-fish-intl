@@ -2,8 +2,8 @@ import { storyblokEditable } from "@storyblok/react"
 
 const Image = ({ blok }) => {
     return (
-        <div {...storyblokEditable(blok)}>
-            <img src={blok.image.filename} width='100px'/> {/*temporary sizing*/}
+        <div {...storyblokEditable(blok)} className="w-1/6">
+            <img src={blok.image.filename} className=""/>
         </div>
     )
 }

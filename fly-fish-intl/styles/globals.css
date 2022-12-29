@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.sib2 {
+    @apply w-full mx-auto mb-2 flex flex-row flex-nowrap justify-between 
+    
+}
+
+.sib3 {
+    @apply w-full mx-auto mb-2 flex flex-row flex-nowrap justify-between 
+    [&>div]:w-[33%];
+}
+
+.sib4 {
+    @apply w-full mx-auto mb-2 flex flex-row flex-nowrap justify-between 
+    [&>div]:w-[24%];
+}
+
+.sib6 {
+    @apply w-full mx-auto mb-2 flex flex-row flex-nowrap justify-between 
+}
+
+.sib8 {
+    @apply w-full mx-auto mb-2 flex flex-row flex-nowrap justify-between 
+    [&>div>a]:font-bold [&>div>a]:text-xl [&>div>a]:tracking-wider [&>div>a]:w-[12.5%] [&>div>a]:text-center 
+    [&>div]:w-[12.5%];
+}
+/*
+.vendor {
+    @apply 
+}
+*/

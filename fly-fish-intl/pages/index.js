@@ -25,7 +25,9 @@ export default function Home({ story }) {
   console.log(story)
 
   return (
-    <div>
+    <div className="[&>div:nth-child(4)]:bg-gray-800 [&>div:nth-child(6)]:bg-gray-200 [&>div:nth-child(8)]:bg-gray-200
+                    [&>div:nth-child(4)>h1]:text-white
+    ">
       <Head>
         <title>Fly Fishing International</title>
         <link rel="icon" href="/favicon.ico" />

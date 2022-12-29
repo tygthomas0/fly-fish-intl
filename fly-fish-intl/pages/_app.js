@@ -10,6 +10,9 @@ import Image from '../components/Image'
 import ActionButton from '../components/ActionButton'
 import ArticleCard from '../components/ArticleCard'
 import ProfileCard from '../components/ProfileCard'
+import ImageGallery from '../components/ImageGallery'
+import LgImgArticleCard from '../components/LgImgArticleCard'
+import ImageWithLink from '../components/ImageWithLink'
 
 const components = {
   feature: Feature,
@@ -21,7 +24,10 @@ const components = {
   image: Image,
   actionbutton: ActionButton,
   articlecard: ArticleCard,
-  profilecard: ProfileCard
+  profilecard: ProfileCard,
+  imagegallery: ImageGallery,
+  lgimgarticlecard: LgImgArticleCard,
+  imagewithlink: ImageWithLink
 }
 
 storyblokInit({
